@@ -47,7 +47,9 @@ Editor: 1870021 휴먼기계바이오공학부 김수아
 : plt.rc, plt.xlabel, plt.ylabel, plt.plot, plt.pie, plt.axis, plt.title, plt.legend, plt.show
 
 <i class="icon-pencil"></i> PROGRAM STRUCTURE
+
 -------------------
+
 
 <i class="icon-file"></i> number_info_load function
 : csv 파일로부터 누적 확진 정보 데이터를 받아오는 함수
@@ -65,7 +67,9 @@ Editor: 1870021 휴먼기계바이오공학부 김수아
 : 사용자로부터 입력을 받아 사용자가 원하는 데이터를 출력할 수 있도록 구성
 
 <i class="icon-pencil"></i> HOW TO USE
+
 -------------------
+
 
 1.분석하고자 하는 지역 범위를 선택합니다. 
 : 1 - 대한민국 COVID-19 추이
