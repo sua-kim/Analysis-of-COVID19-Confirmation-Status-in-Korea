@@ -1,6 +1,4 @@
-# Analysis-of-COVID19-Confirmation-Status-in-Korea
-
-대한민국 COVID-19 확진 현황 분석 프로그램
+# Analysis-of-COVID19-Confirmation-Status-in-Korea (대한민국 COVID-19 확진 현황 분석 프로그램)
 ===========================
 
 Editor: 이화여자대학교 휴먼기계바이오공학부 1870021 김수아
@@ -10,11 +8,10 @@ Editor: 이화여자대학교 휴먼기계바이오공학부 1870021 김수아
 ----------
 
 
-<i class="icon-folder-open"></i> Data
+# Data
 --------------------------------
 
-
-#### <i class="icon-file"></i> CSV file
+## CSV file
 
 - 대한민국 누적 확진 현황 데이터
 - 광역시/도별 누적 확진 현황 데이터
@@ -22,7 +19,7 @@ Editor: 이화여자대학교 휴먼기계바이오공학부 1870021 김수아
 
 - 코로나 19(COVID-19) 실시간 상황판 사이트 (https://coronaboard.kr/)
 
-#### <i class="icon-file"></i> Wikipedia data
+## Wikipedia data
 
 - 광역시/도별 소재별 확진 현황 데이터
 
@@ -31,58 +28,58 @@ Editor: 이화여자대학교 휴먼기계바이오공학부 1870021 김수아
 
 ----------
 
-<i class="icon-pencil"></i> TOOL (MODULE USED)
+# TOOL (MODULE USED)
 -------------------
 
-#### <i class="icon-file"></i> csv
+## csv
 : csv.reader
 
-#### <i class="icon-file"></i> pandas
+## pandas
 : pandas.read_html, dataframe.iloc, dataframe.loc dataframe.index, dataframe.index, del dataframe['column_name']
 
-#### <i class="icon-file"></i> numpy
+## numpy
 : numpy.array, numpy.sum
 
-#### <i class="icon-file"></i> matplotlib.pyplot (plt)
+## matplotlib.pyplot (plt)
 : plt.rc, plt.xlabel, plt.ylabel, plt.plot, plt.pie, plt.axis, plt.title, plt.legend, plt.show
 
-<i class="icon-pencil"></i> PROGRAM STRUCTURE
 
+
+# PROGRAM STRUCTURE
 -------------------
 
 
-<i class="icon-file"></i> number_info_load function
+## number_info_load function
 : csv 파일로부터 누적 확진 정보 데이터를 받아오는 함수
 
-<i class="icon-file"></i> cluster_info_load function
+## cluster_info_load function
 : Wikipedia로부터 지역별, 소재별 코로나 확진 정보 데이터를 저장하는 함수
 
-<i class="icon-file"></i> number_visualization function
+## number_visualization function
 : 꺾은선 그래프를 통해 누적 확진자 수 데이터를 그래프로 시각화하는 함수
 
-<i class="icon-file"></i> cluster_visualization function
+## cluster_visualization function
 : 파이차트를 통해 소재별 확진 현황 데이터를 그래프로 시각화하는 함수
 
-<i class="icon-file"></i> main function
+## main function
 : 사용자로부터 입력을 받아 사용자가 원하는 데이터를 출력할 수 있도록 구성
 
-<i class="icon-pencil"></i> HOW TO USE
 
+# HOW TO USE
 -------------------
 
-
-1.분석하고자 하는 지역 범위를 선택합니다. 
+## 1.분석하고자 하는 지역 범위를 선택합니다. 
 : 1 - 대한민국 COVID-19 추이
   2 - 광역시도별 COVID-19 추이
 
-2-1. '1. 대한민국 COVID-19 추이'를 선택했다면
+## 2-1. '1. 대한민국 COVID-19 추이'를 선택했다면
 : 누적 확진자 추이 변화/소재별 확진현황 중 알고 싶은 정보를 선택하여 결과를 출력합니다.
 
-2-2. '2. 광역시도별 COVID-19 추이'를 선택했다면:
+## 2-2. '2. 광역시도별 COVID-19 추이'를 선택했다면:
 : 알고싶은 지역명을 입력하고 해당 지역에 대한 누적 확진자 추이 변화/소재별 확진현황 중 알고싶은 정보를 선택하여 결과를 출력합니다.
 
 
-> **유의 사항:**
+# **유의 사항:**
 
 > - 2-1의 대한민국 누적 확진자 추이 변화는 데이터가 1월 21일부터 존재하는 반면, 2-2의 지역별 누적 확진자 추이 변화는 데이터가 2월 17일부터 존재하므로 두 그래프를 출력하여 비교했을 때, x축 좌표(누적일자) 차이가 존재할 수 있다.
 > 
